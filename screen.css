@@ -1,1 +1,125 @@
-/* Add screen styles below */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+	/* Color */
+	--main-bg-color: #E9E9E9;
+	--form-bg-color: #E2E2E2;
+	--primary-text-color: #424242;
+	--accent-color: #FF3F3C;
+
+	/* Font Size */
+	--h1-font-size: 36px;
+	--h2-font-size: 180px;
+	--h3-font-size: 64px;
+	--body-md-text-size: 32px;
+	--body-sm-text-size: 24px;
+}
+
+body {
+	background: var(--main-bg-color);
+	color: var(--primary-text-color);
+	font-family: "Inter", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	padding: 60px 70px;
+	margin-bottom: 100px;
+}
+
+header h1 {
+	font-size: var(--h1-font-size);
+	margin: 0;
+}
+
+main {
+	background: url('polaroid.png') no-repeat center 200px;
+	margin: 0 auto;
+	width: 1050px;
+}
+
+section p, ul {
+	font-size: var(--body-md-text-size);
+	margin: 0 0 48px 0;
+	padding: 0;
+}
+
+section h3 {
+	font-size: var(--h3-font-size);
+	text-align: center;
+	margin: 0 0 24px 0;
+}
+
+.hero {
+	text-align: center;
+	min-height: 800px;
+}
+
+.hero h2 {
+	font-size: var(--h2-font-size);
+	line-height: 1em;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.details {
+	margin-top: 120px;
+}
+
+.details ul li {
+	list-style-type: none;
+	margin: 20px 0;
+	padding: 0 0 0 80px;
+}
+
+svg {
+	width: 40px;
+}
+
+.details ul li.wifi {
+	background: url('wifi-solid.svg') no-repeat center left;
+}
+
+.details ul li.cloud {
+	background: url('cloud-arrow-up-solid.svg') no-repeat center left;
+}
+
+.details ul li.qr {
+	background: url('qrcode-solid.svg') no-repeat center left;
+}
+
+.details ul li.share {
+	background: url('photo-film-solid.svg') no-repeat center left;
+}
+
+.cta{
+	margin-bottom: 100px;
+}
+
+.cta form {
+	background: var(--form-bg-color);
+	padding: 48px;
+	border-radius: 24px;
+	display: flex;
+	gap: 10px;
+}
+
+.cta form #input-field {
+	font-size: var(--body-sm-text-size);
+	border: none;
+	width: 75%;
+	padding: 24px;
+	margin: 0;
+}
+
+.cta form #input-button {
+	width: 25%;
+	margin: 0;
+	border: none;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: var(--body-sm-text-size);
+	background: var(--accent-color);
+	color: white;
+}
